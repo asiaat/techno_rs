@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# Kasutamine:
+# chmod +x pt8_curl_paringud.sh
+# ELASTIC_PASSWORD="sinu_tegelik_parool" ./pt8_curl_paringud.sh
+
 ELASTIC_PASSWORD="${ELASTIC_PASSWORD:-SINU_PAROOL}"
 CA_CERT="/etc/elasticsearch/certs/http_ca.crt"
 ES_URL="https://localhost:9200"
